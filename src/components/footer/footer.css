@@ -1,0 +1,15 @@
+.footer{
+    padding: 24px 119px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #252F3D;
+    color: #fff;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 22.40px;
+    word-wrap: break-word
+}

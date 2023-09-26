@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    height: 50px;
+    background-color: #252F3D;
+    color: #fff;
+    align-items: center;
+    display: flex;
+}
+.text {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 12px;
+}
+.novo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.img {
+    margin: 0 12px 0 0;
+}
