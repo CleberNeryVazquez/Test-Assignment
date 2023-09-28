@@ -274,11 +274,11 @@
     word-wrap: break-word;
 }
 .stepper{
-        background-color: #fff;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 127px;
-    }
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 127px;
+}
 
 .step{
     color: #718096;
@@ -294,7 +294,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid darkslateblue;
+    border: 2px solid #2C7EF8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -308,6 +308,12 @@
 .complete .step-number{
     background-color: #59AE43;
     color: #fff;
+    border: none;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: #fff;
+   font-size: 12px;
 }
 .section-button{
     width: 100%;
@@ -349,4 +355,13 @@
     .stepper{
         padding: 20px 70px;
     }
+    .row{
+        flex-direction: column;
+        width: 700px;
+        height: 650px;
+        display: flex;
+        padding: 10px;
+        margin:20px;
+    }
+    
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { register } from 'swiper/element/bundle'
 import 'swiper/swiper-bundle.css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -8,6 +9,7 @@ import icon1 from '../../assets/icon1.svg'
 import icon2 from '../../assets/icon2.svg'
 import icon3 from '../../assets/icon3.svg'
 import icon4 from '../../assets/icon4.svg'
+register();
 
 const Header = () => {
     const objects = [

@@ -18,7 +18,7 @@ import { TiTick } from 'react-icons/ti'
 import { useState } from 'react'
 
 const Form = () => {
-    const [currentStep,setcurrentStep] =useState(1)
+    const [currentStep,setcurrentStep] =useState(3)
     const [complete,setcomplete] =useState(false)
     const steps = [
         {
