@@ -364,14 +364,25 @@
         height: auto;
         padding: 10px;
         margin:20px;
+        align-items: center;
     }
-    .row-img{
-        width: 550px; 
-    }
-    .section1{
-        order: 1;
-    }
+  .media767{
+    width: 700px;
+    height: auto;
+  }
+    
     
 }
 
-@media( max-width: 575px ){}
+@media( max-width: 575px ){
+    .row{
+        width: 500px;
+        height: auto;
+        padding: 5px;
+        margin: 10px;
+    }
+    .media575{
+        width: 500px;
+        height: auto;
+    }
+}

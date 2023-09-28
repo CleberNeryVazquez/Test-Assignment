@@ -65,7 +65,7 @@ const Form = () => {
                             
                             <img src={banner} alt="" />
                         </div>
-                        <div className="user">
+                        <div className="user media767 edia575">
                             <div className="user-img">
                                 <img src={photo} alt="" />
                                 <div className="stat-text">
@@ -81,10 +81,10 @@ const Form = () => {
                         </div>
                     </div>
                     <div className="row-description">
-                        <div className="section1">
+                        <div className="section1 media767">
                             <h2> <strong>ONE TIME ONLY</strong> special price for 6 extra Clarifion for only <span>$14 each</span> ($84.00 total!)</h2>
                         </div>
-                        <div className="section2">
+                        <div className="section2 media767 edia575">
                             <div className="section2-img">
                                 <img src={product} alt="" />
                             </div>
@@ -98,16 +98,16 @@ const Form = () => {
                                 <div className='info__section2'>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</div>
                             </div>
                         </div>
-                        <div className="section3" >
+                        <div className="section3 media767 edia575" >
                             <div className="section3-item"><TiTick size={32} color='#2C7EF8' />Negative Ion Technology may <span>help with allergens</span></div>
                             <div className="section3-item"><TiTick size={32} color='#2C7EF8' />Designed for <span>air rejuvenation</span></div>
                             <div className="section3-item"><TiTick size={32} color='#2C7EF8' /> <span>Perfect for every room</span>in all types of places.</div>
                         </div>
-                        <div className="section4">
+                        <div className="section4 media767 media575">
                                 <img src={p100} alt="" />
                                <p> Save<span>53%</span>  and get <span>6 extra Clarifision</span> for only<span>$14 Each.</span>  </p>
                         </div>
-                        <div className='section-button' >
+                        <div className='section-button media767 media575' >
                         <button 
                         className='button'
                         onClick={() => {
@@ -116,7 +116,7 @@ const Form = () => {
                             : setcurrentStep((prev) => prev +1)
                         }} >Yes - Claim my discount </button>
                         </div>
-                        <div className="section5">
+                        <div className="section5 media767">
                             <p>Free shipping |</p> 
                             <img src={lock} alt="" className="section5-icon"/> 
                             <p>Secure 256-bit SSL encryption. |  </p>
@@ -131,12 +131,12 @@ const Form = () => {
                                 <li><img src={Amex} alt="" /></li>
                             </ul>
                         </div>
-                        <div className="section6">
+                        <div className="section6 media767 media575">
                             <p className="button-no">
                             No thanks, I don’t want this. 
                             </p>
                         </div>
-                        <div className="section7">
+                        <div className="section7 media767 media575">
                             <div className="section7-img">
                                 <img src={satisfaction} alt="" />
                             </div>
