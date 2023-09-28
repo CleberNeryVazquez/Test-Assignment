@@ -2,8 +2,13 @@ import './form.css'
 import photo from '../../assets/photo.jpg'
 import banner from '../../assets/banner.jpg'
 import icon1 from '../../assets/icon1.svg'
+import { TiTick } from 'react-icons/ti'
+import { useState } from 'react'
 
 const Form = () => {
+    const [currentStep,setcurrentStep] =useState(1)
+    const [complete,setcomplete] =useState(false)
+    const [test , settest] =useState()
     const steps = [
         {
             span: "Step 1",
@@ -30,8 +35,10 @@ const Form = () => {
             </div>
             <div className="stepper">
                 {steps?.map((step, i) => (
-                    <div key={i} className='step-item'>
-                        <div className='step-number'>{i+1}</div>
+                    <div key={i} className={`step-item ${currentStep === i+1 && 'active'} ${(i+1 <currentStep || complete) && 'complete'} `}>
+                        <div className='step-number'>
+                            { i + 1 < currentStep || complete ?  < TiTick size={24} /> : i + 1  }
+                        </div>
                         <p className='step'><span>{step.span}</span> {step.p}</p>
                     </div>
                 ))}
@@ -39,7 +46,9 @@ const Form = () => {
             </div>
           {/*   <Status03 /> */}
           <div className="container-status">
-            <form action="">
+            <form onSubmit={(e) => {
+                e.preventDefault()
+            }}>
                 <div className="row">
                     <div className="row-img">
                         <div className="row-banner">
@@ -62,6 +71,13 @@ const Form = () => {
                         <div className="text-desc">
                             <h2> <span>ONE TIME ONLY</span>special price for 6 extra Clarifion for only <span>$14 each</span> ($84.00 total!)</h2>
                         </div>
+                        <button 
+                        className='button'
+                        onClick={() => {
+                            currentStep === steps.length
+                            ? setcomplete(true)
+                            : setcurrentStep((prev) => prev +1)
+                        }} >next</button>
                     </div>
                 </div>
             </form>

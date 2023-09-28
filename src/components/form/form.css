@@ -1,4 +1,5 @@
 .container-form {
+    
     background-color: green;
     height: 100vh;
     width: 100%;
@@ -34,8 +35,9 @@
 
 
 .img-banner{
-    width: 120px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 .container-status {
     width: 80%;
@@ -70,8 +72,7 @@
     align-items: center;
     justify-content: center;
     width: 220px;
-    background-color: orange;
-
+    color: #333;
 }
 .step-number{
     width: 50px;
@@ -82,7 +83,27 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    color: #333;
 }
+.active .step-number{
+    background-color: blue;
+    color: #fff;
+}
+.complete .step-number{
+    background-color: darkgreen;
+    color: #fff;
+}
+
+.button {
+    padding: 20px 110px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: green;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
 @media screen and (max-width: 767px) {
     .step-item {
         flex-direction: column;
