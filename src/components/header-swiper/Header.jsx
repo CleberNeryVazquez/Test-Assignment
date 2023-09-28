@@ -29,22 +29,25 @@ const Header = () => {
         }
     ]
   return (
-    <div className='container'>
+    <div className='container' >
         
         <Swiper 
          navigation ={ true }
+        
         breakpoints={{
             576: {
                 slidesPerView: 2,
                 spaceBetween: 10,
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
                
               },
-            // Quando a largura da tela for maior ou igual a 768 pixels
             768: {
               slidesPerView: 3,
               spaceBetween: 20,
             },
-            // Quando a largura da tela for maior ou igual a 1200 pixels
             1200: {
               slidesPerView: 4,
               spaceBetween: 30,
