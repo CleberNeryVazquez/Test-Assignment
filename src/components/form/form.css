@@ -47,6 +47,7 @@
     display: flex;
     padding: 40px;
     margin:50px;
+    flex-wrap: wrap;
     background-color: #fafafa;
 }
 .row-img {
@@ -58,6 +59,7 @@
     background-color: transparent;
     border-radius: 15px;
     border: 1px solid transparent;
+    background-color: #fff;
 }
 .user-img{
     display: flex;
@@ -257,6 +259,7 @@
     text-decoration: underline;
     text-transform: uppercase;
     word-wrap: break-word;
+    cursor: pointer;
 }
 .section7{
     display: flex;
@@ -331,6 +334,7 @@
     font-weight: 700;
     text-transform: uppercase;
     word-wrap: break-word;
+    cursor: pointer;
 }
 .button::after{
     content: "->";
@@ -358,10 +362,17 @@
     .row{
         flex-direction: column;
         width: 700px;
-        height: 650px;
-        display: flex;
+        height: auto;
         padding: 10px;
         margin:20px;
     }
+    .row-img{
+        width: 550px; 
+    }
+    .section1{
+        order: 1;
+    }
     
 }
+
+@media( max-width: 575px ){}

@@ -11,5 +11,22 @@
     font-weight: 400;
     text-transform: capitalize;
     line-height: 22.40px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+    .footer{
+        flex-direction: column;
+        padding: 12px 60px;
+        height: auto;
+    }
+    .footer div {
+        margin: 32px 0;
+    }
+}
+@media( max-width: 575px ){
+    .footer{
+        padding: 0px 16px;
+    }
+   
 }
