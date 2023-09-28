@@ -47,7 +47,6 @@
     display: flex;
     padding: 40px;
     margin:50px;
-    flex-wrap: wrap;
     background-color: #fafafa;
 }
 .row-img {
